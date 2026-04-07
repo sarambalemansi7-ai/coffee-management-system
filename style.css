@@ -127,3 +127,7 @@ h2 {
         padding: 20px;
     }
 }
+<nav aria-label="Main Navigation">
+  <a href="index.html">Home</a>
+  <a href="login.html">Admin Login</a>
+</nav>
