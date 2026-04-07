@@ -20,15 +20,14 @@ function loginAdmin() {
 
 // ADD MENU ITEM (Frontend only)
 function addMenuItem() {
-    const name = document.getElementById("coffeeName").value;
-    const price = document.getElementById("coffeePrice").value;
+    const name = document.getElementById("coffeeName").value = "";
+    const price =document.getElementById("coffeePrice").value = "";
 
-    if(name === "" || price === "") {
-        alert("Please fill all fields");
-        return;
+    if(name && price){
+        alert("Item Added Successfully ✅");
+    } else {
+        alert("Please fill all fields ❌");
     }
-
-    alert("Menu Item Added (Backend will be connected later)");
 }
 
 // CALCULATE ORDER TOTAL
