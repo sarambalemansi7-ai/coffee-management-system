@@ -78,7 +78,10 @@ button {
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s;
+   a:focus, button:focus {
+    outline: 3px solid orange;
 }
+
 
 button:hover {
     background-color: #267acc;
