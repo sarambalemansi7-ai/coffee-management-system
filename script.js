@@ -29,7 +29,23 @@ function addMenuItem() {
         alert("Please fill all fields ❌");
     }
 }
+function addMenuItem() {
+    const name = document.getElementById("coffeeName").value;
+    const price = document.getElementById("coffeePrice").value;
 
+    if(name && price){
+        const table = document.getElementById("menuTable");
+        const row = table.insertRow();
+
+        row.insertCell(0).innerHTML = name;
+        row.insertCell(1).innerHTML = "₹ " + price;
+
+        document.getElementById("coffeeName").value = "";
+        document.getElementById("coffeePrice").value = "";
+    } else {
+        alert("Please fill all fields");
+    }
+}
 // CALCULATE ORDER TOTAL
 function calculateTotal() {
     const price = document.getElementById("itemPrice").value;
