@@ -8,7 +8,15 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(to right, #cce7ff, #e6f3ff);
 }
+body {
+    color: #222;
+    background: #fff;
+}
 
+.hero-content {
+    background: rgba(0,0,0,0.6);
+    color: white;
+}
 /* NAVBAR */
 nav {
     background-color: #3399ff;
@@ -107,4 +115,15 @@ h2 {
     background-repeat: no-repeat;
     height: 100vh;
     color: white;
+}
+   @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
 }
