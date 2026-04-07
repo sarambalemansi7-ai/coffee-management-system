@@ -12,7 +12,9 @@ body {
     color: #222;
     background: #fff;
 }
-
+body {
+    background: linear-gradient(to right, #f3f4f6, #e0e7ff);
+}
 .hero-content {
     background: rgba(0,0,0,0.6);
     color: white;
